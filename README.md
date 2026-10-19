@@ -45,7 +45,7 @@ Figures are saved in `output/`:
 
 - **Example 1** uses the `spei_granada` dataset included in the droughtevents package. No external data are required.
 - **Example 2** uses:
-  - Monthly SPEI-12 series for Sierra de Baza (Spain), Pfynwald (Switzerland) and Hyytiälä (Finland), extracted from SPEIbase (Beguería et al., 2014; https://spei.csic.es/database.html) and provided in `data/spei12_sites.csv`. The original global NetCDF file (`spei12.nc`, ~360 MB) is not included because of its size. It is only needed to regenerate `spei12_sites.csv`: download it from SPEIbase and place it in `data/`.
+  - Monthly SPEI-12 series for Sierra de Baza (Spain), Pfynwald (Switzerland) and Hyytiälä (Finland). The global SPEI-12 NetCDF file (`spei12.nc`) was downloaded from SPEIbase (Beguería et al., 2014; https://spei.csic.es/database.html; version [2.11], accessed [September 2026]), and the series of the grid cells containing each site were extracted with `plot_scot_pine.R` and saved in `data/spei12_sites.csv`. The NetCDF file (~360 MB) is not included in this repository because of its size. It is only needed to regenerate `spei12_sites.csv`: download it from SPEIbase and place it in `data/`.
   - The chorological map of *Pinus sylvestris* from the European Atlas of Forest Tree Species (Caudullo et al., 2017; https://doi.org/10.6084/m9.figshare.5091901).
   - Country boundaries from Natural Earth, accessed through the R package rnaturalearth.
 
